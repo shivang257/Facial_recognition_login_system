@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+#cameraContainer {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    /* Increased padding */
+    background-color: #4CAF50;
+    /* Green background */
+    color: #fff;
+    /* White text */
+    border: none;
+    border-radius: 8px;
+    /* Rounded corners */
+    cursor: pointer;
+    font-size: 18px;
+    /* Increased font size */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+#errorMsg {
+    color: red;
+    margin-top: 10px;
+}
