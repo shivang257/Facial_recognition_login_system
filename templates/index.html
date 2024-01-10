@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Face Recognition Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+  <h1>Face Recognition Login</h1>
+  <div id="cameraContainer">
+    <video id="videoElement" autoplay></video>
+  </div>
+  <form action="/login" method="post">
+    <button id="loginBtn" type="submit">Login</button>
+  </form>
+  {% if error %}
+  <p id="errorMsg">{{ error }}</p>
+  {% endif %}
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
